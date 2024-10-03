@@ -1,0 +1,226 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+.menu-container {
+  border-radius: 10px;
+  background-color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+/* Estilo do menu como flexbox */
+.menu {
+  display: flex;
+  align-items: center; /* Alinha os itens verticalmente ao centro */
+  justify-content: space-around; /* Distribui o espaço entre os links */
+  list-style-type: none; /* Remove a formatação de lista */
+  padding: 0;
+  margin: 0;
+}
+
+/* Ajuste da logo */
+.menu .logo img {
+  max-width: 150px; /* Ajuste o tamanho da logo conforme necessário */
+  height: auto;
+  margin-right: 20px; /* Espaço entre a logo e o primeiro link */
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+a:hover {
+  background-color: rgb(23, 93, 173);
+  color: white;
+}
+
+header {
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 15px 0;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.hero {
+  text-align: center;
+  padding: 40px;
+  background-color: #f7f7f7;
+  position: relative;
+}
+
+.hero img {
+  width: 100%;
+  max-width: 900px;
+  border-radius: 8px;
+}
+
+main {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.about {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.about h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.about p {
+  font-size: 1.3rem;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.servico {
+  text-align: center;
+}
+
+.servico h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.servico-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.servico-item {
+  width: 48%;
+  margin-bottom: 30px;
+}
+
+.servico-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.servico-item h3 {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+.servico-item p {
+  font-size: 1.3rem;
+  color: #555;
+}
+
+/* Ajuste para a seção de convênios */
+.convenios {
+  margin: 40px 0;
+}
+
+.convenios-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.convenios ul {
+  list-style: decimal;
+  font-size: 1.3rem;  /* Aumento da fonte para convênios */
+  color: #555;
+  padding-left: 40px;
+}
+
+.convenios ul li {
+  margin: 10px 0;
+}
+
+.handshake-image {
+  width: 250px;  /* Aumentado para 250px para melhorar a visibilidade */
+  height: auto;
+  margin-left: 20px;
+}
+
+/* Ajuste para a seção de contato */
+.contact {
+  margin: 40px 0;
+}
+
+.contact p {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.contact img {
+  width: 20px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #f7f7f7;
+  margin-top: 40px;
+}
+
+footer p {
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .service-item {
+    width: 100%;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  .hero img {
+    max-width: 100%;
+  }
+
+  /* Ajuste responsivo para a seção de convênios */
+  .convenios-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .handshake-image {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+}
